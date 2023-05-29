@@ -20,6 +20,7 @@ This repo contains code to run the AI Baby Sleep Tracking service as well as a w
 
 - Camera which supports RTSP
 - Compute accessible via HTTP requests (I used a Raspberry Pi, but you can use any computer)
+- Python 3.10 or lower (3.11 is not supported by MediaPipe [[see](https://github.com/google/mediapipe/issues/1325)])
 
 ## Setup
 
@@ -48,6 +49,10 @@ There are number of environment variables and holes you'll need to fill with inf
 Alternatively you can `touch .env` and then copy and paste the contents of `.env_sample` into it. Then fill in the blanks.
 
 The sleep data is written to `sleep_logs.csv`. I primed this file with a few rows as an example. Feel free to remove these and start from scratch.
+
+It is possible to watch the live stream of the camera (and debug view) at: http://URL_OF_BACKEND:PORT_OF_BACKEND/videostream and http://URL_OF_BACKEND:PORT_OF_BACKEND/videostream_debug
+
+To reload the settings from the yml file, open http://URL_OF_BACKEND:PORT_OF_BACKEND/reload_settings
 
 ### Part 2: The Web App
 

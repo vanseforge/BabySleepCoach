@@ -12,4 +12,5 @@ build
 !*.ipynb
 !requirements.txt
 !.env_sample
+!settings.yml
 !.env_sample_docker
