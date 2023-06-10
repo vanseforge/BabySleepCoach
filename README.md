@@ -88,3 +88,23 @@ docker run -d -p7080:80 -p7081:8000 -e REACT_APP_BACKEND_URL=URL_OF_THE_DOCKER_C
 
 The frontend can be accessed via http://URL_OF_THE_DOCKER_CONTAINER:7080 (or the port you wrote in the run command).
 
+
+<br/><br/>
+### Home automation / MQTT
+Baby Sleep Coach can also be integrated into home automations like OpenHAB, Home Assistant or ioBroker. For this purpose, there is an MQTT topic
+
+`homeassistant/binary_sensor/baby_sleep_coach/is_awake/state`
+
+which can be used to query the awake status of the baby. This can then be used, for example, to turn off the doorbell when the baby is asleep.
+
+MQTT auto discovery from OpenHAB and Home Assistant is also supported.
+
+<br/><br/>
+### Home automation / MQTT
+Baby Sleep Coach can also be integrated into home automations like OpenHAB, Home Assistant or ioBroker. For this purpose, there is an MQTT topic
+
+`homeassistant/binary_sensor/baby_sleep_coach/is_awake/state`
+
+which can be used to query the awake status of the baby. This can then be used, for example, to turn off the doorbell when the baby is asleep.
+
+MQTT auto discovery from OpenHAB and Home Assistant is also supported.
